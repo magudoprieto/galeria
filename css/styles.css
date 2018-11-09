@@ -1,0 +1,140 @@
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+}
+
+
+img{
+	width: 100%;
+	height: auto;
+}
+
+h1,h2{
+	font-family: 'Libre Baskerville', serif;
+}
+
+h3,h4,h5,h6{
+	font-family: 'Montserrat', sans-serif;
+}
+
+header h2, header p{
+	color: #AAA;
+}
+
+p{
+	font-family: 'Montserrat', sans-serif;
+}
+
+header{
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 60px 0px 120px 0;
+}
+
+main{
+	padding-bottom: 30px;
+}
+
+main .imagenes{
+	width: 100%;
+	margin-top: -30px;
+}
+
+main .imagenes div{
+	width: 50%;
+	float: left;
+	margin-bottom: -5px;
+	position: relative;
+	overflow: hidden;
+
+}
+
+main .imagenes div .velo{
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0px;
+	left: 0px;
+	opacity: 0;
+	transition: 1s;
+}
+
+main .imagenes div:hover .velo{
+	opacity: 1;
+
+}
+
+main .imagenes div .velo h4, main .imagenes div .velo h3{
+	text-align: center;
+	position: relative;
+	top: 45%;
+	color: white;
+	opacity: 0;
+	transition: 1s;
+}
+
+main .imagenes div:hover .velo h4, main .imagenes div:hover .velo h3{
+	opacity: 1;
+
+}
+
+main .imagenes div .velo h4{
+	left: -500px;
+	transition: 1s:;
+}
+
+main .imagenes div .velo h3{
+	right: -500px;
+	transition: 1s:;
+}
+
+main .imagenes div:hover .velo h4{
+	left:0px;
+}
+
+main .imagenes div:hover .velo h3{
+	right: 0px;
+}
+
+main .imagenes div img{
+	transition: 1s;
+}
+
+main .imagenes div:hover img{
+	transform: rotate(10deg) scale(1.5);
+
+}
+
+footer{
+	background-color: black;
+	color: white;
+	padding: 10px 0px;
+}
+
+.row{
+	margin: 0px auto;
+	max-width: 1170px;
+}
+
+.row:after{
+	clear: both;
+	content: "";
+	display: block;
+	height: 0px;
+}
+
+
+
+@media(max-width:500px){
+	main .imagenes{
+		width: 95%;
+		margin-left: 5%;
+	}
+
+	main .imagenes div{
+		width: 100%;
+	}
+}
